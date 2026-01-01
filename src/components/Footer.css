@@ -1,0 +1,112 @@
+.footer {
+    background-color: var(--color-bg-secondary);
+    border-top: 2px solid var(--color-accent);
+    /* Highlight border */
+    color: var(--color-text-main);
+    /* Brighter text for highlight */
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* Adjusted for 3 cols */
+    gap: 3rem;
+    margin-bottom: 2rem;
+    /* Reduced margin */
+    align-items: start;
+}
+
+.footer-logo {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    /* Glow effect */
+}
+
+.footer-col p {
+    color: var(--color-text-main);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.footer-col h4 {
+    color: var(--color-accent);
+    /* Highlight headers */
+    margin-bottom: 1.2rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.8rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-text-main);
+}
+
+.contact-item svg {
+    color: var(--color-accent);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-accent);
+    /* Gold border by default */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: var(--color-accent);
+}
+
+.social-icon:hover {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+.footer-bottom {
+    padding-top: 1.5rem;
+    /* Reduced padding */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+/* Reduce main section padding specifically for footer to make it compact */
+.footer.section-padding {
+    padding: 3rem 0 1.5rem;
+    /* Top 3rem, Bottom 1.5rem */
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        /* 2 cols on tablet */
+    }
+
+    .footer-col:first-child {
+        grid-column: 1 / -1;
+        /* Logo/Desc spans full width */
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

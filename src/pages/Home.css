@@ -1,0 +1,160 @@
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bg-dark-secondary {
+    background-color: var(--color-bg-secondary);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+}
+
+.quote-box {
+    border-left: 4px solid var(--color-accent);
+    padding-left: 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.rounded-img {
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.vm-card {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+}
+
+.vm-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.vm-card h3 {
+    margin-bottom: 1.5rem;
+}
+
+.vm-card ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: var(--color-text-muted);
+}
+
+.vm-card ul li {
+    margin-bottom: 0.8rem;
+}
+
+.services-grid-new {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background: rgba(212, 175, 55, 0.05);
+    padding: 1.2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    color: var(--color-white);
+}
+
+.check-icon {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .grid-2,
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+/* Parent Brand Styles */
+.parent-brand-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+    /* Subtle backlight */
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.parent-logo {
+    height: 110px;
+    /* Slightly larger */
+    width: auto;
+    opacity: 1;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    /* Stronger default border */
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+    /* Constant glow */
+}
+
+.parent-logo:hover {
+    transform: scale(1.05);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+    /* Intense glow on hover */
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.small-tracking {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    /* Make text gold */
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}

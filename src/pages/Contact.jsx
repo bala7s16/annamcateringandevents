@@ -22,7 +22,7 @@ const Contact = () => {
                             <div className="icon-box"><Mail /></div>
                             <div>
                                 <h5>Email</h5>
-                                <p>info@annamcatering.com</p>
+                                <p>info@annamcateringandevents.com</p>
                             </div>
                         </div>
 

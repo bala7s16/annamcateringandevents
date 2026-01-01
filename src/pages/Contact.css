@@ -74,5 +74,10 @@
 @media (max-width: 768px) {
     .contact-wrapper {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form-container {
+        padding: 1.5rem;
     }
 }

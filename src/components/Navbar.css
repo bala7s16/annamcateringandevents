@@ -115,4 +115,14 @@
     .mobile-only {
         display: block;
     }
+
+    .navbar-logo {
+        font-size: 1.1rem;
+        /* Reduced from 1.5rem to fix hierarchy */
+    }
+
+    .navbar-logo .logo-icon {
+        width: 20px;
+        height: 20px;
+    }
 }

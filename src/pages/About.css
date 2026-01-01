@@ -1,6 +1,12 @@
-/* Moved from Home.css and reinforced */
 .page-padding {
     padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .page-padding {
+        padding-top: 100px;
+        /* Keep strict spacing due to fixed navbar */
+    }
 }
 
 .grid-2 {
@@ -99,5 +105,9 @@
     .vision-mission-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    .page-padding {
+        padding-top: 100px;
     }
 }
